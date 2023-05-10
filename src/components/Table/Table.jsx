@@ -10,7 +10,7 @@ export const Table = ({ml, price}) => {
   const packagePrice20ml = 15;
   const packagePrice30ml = 20;
   const packagePrice50ml = 25;
-  const packagePrice100ml = 30;
+  const packagePrice100ml = 50;
 
   const getExpenses = (miligrams, price) => ml1 = price / miligrams;
   
@@ -24,8 +24,8 @@ getExpenses(+ml, +price)
   let ml40 = Math.ceil(ml1 * 40 + packagePrice50ml + 2);
   let ml50 = Math.ceil(ml1 * 50 + packagePrice50ml + 2);
   let ml100 = Math.ceil(ml1 * 100 + packagePrice100ml + 2);
-
-
+  let ml150 = Math.ceil(ml1 * 150 + 2);
+let ml200 = Math.ceil(ml1 * 200 + 2);
 
 
 
@@ -44,8 +44,8 @@ getExpenses(+ml, +price)
                     <td style={{ border: "1px solid black" }}>40мл</td>
                     <td style={{ border: "1px solid black" }}>50мл</td>
                     <td style={{ border: "1px solid black" }}>100мл</td>
-                    <td style={{ border: "1px solid black" }}>---</td>
-                    <td style={{ border: "1px solid black" }}>---</td>
+                    <td style={{ border: "1px solid black" }}>150мл</td>
+                    <td style={{ border: "1px solid black" }}>200мл</td>
                     <td style={{ border: "1px solid black" }}>---</td>
                     <td style={{ border: "1px solid black" }}>---</td>
                     <td style={{ border: "1px solid black" }}>---</td>
@@ -58,8 +58,8 @@ getExpenses(+ml, +price)
                     <td style={{ border: "1px solid black" }}>{ml40 || 0}</td>
                     <td style={{ border: "1px solid black" }}>{ml50 || 0}</td>
                     <td style={{ border: "1px solid black" }}>{ml100 || 0}</td>
-                    <td style={{ border: "1px solid black" }}>--</td>
-                    <td style={{ border: "1px solid black" }}>--</td>
+                    <td style={{ border: "1px solid black" }}>{ml150 || 0}</td>
+                    <td style={{ border: "1px solid black" }}>{ml200 || 0}</td>
                     <td style={{ border: "1px solid black" }}>--</td>
                     <td style={{ border: "1px solid black" }}>--</td>
                     <td style={{ border: "1px solid black" }}>--</td>

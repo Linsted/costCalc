@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Form } from "./Table/Form/Form";
+import { Form } from "./Form/Form";
 import { Table } from "./Table/Table";
 
 export const App = () => {
