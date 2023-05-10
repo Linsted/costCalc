@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/costCalc/static/css/main.7acaea2f.css",
+    "main.js": "/costCalc/static/js/main.07d3183d.js",
+    "index.html": "/costCalc/index.html",
+    "main.7acaea2f.css.map": "/costCalc/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/costCalc/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
