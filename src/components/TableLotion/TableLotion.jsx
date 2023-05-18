@@ -6,7 +6,7 @@ export const TableLotion = ({ml, price}) => {
 
 
         let ml1 = price/ml;
-  const packagePrice10ml = 15; 
+  const packagePrice10ml = 10; 
   const packagePrice20ml = 10;
   const packagePrice30ml = 10;
   const packagePrice50ml = 15;
