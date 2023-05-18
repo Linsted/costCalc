@@ -1,21 +1,19 @@
-export const Table = ({ml, price}) => {
+export const TableCream = ({ml, price}) => {
 
 
 
 
 
 
-    let ml1;
+    let ml1 = price/ml;
   const packagePrice10ml = 10; 
   const packagePrice20ml = 15;
   const packagePrice30ml = 20;
   const packagePrice50ml = 25;
-  const packagePrice100ml = 50;
+    const packagePrice100ml = 50;
+    const percentsL = 0.7;
+const percentsS = 0.6;
 
-  const getExpenses = (miligrams, price) => ml1 = price / miligrams;
-  
-
-getExpenses(+ml, +price)
 
   let ml5 = Math.ceil(ml1*5  + packagePrice10ml + 2);
   let ml10 = Math.ceil(ml1 * 10 + packagePrice10ml + 2);
@@ -37,6 +35,7 @@ let ml200 = Math.ceil(ml1 * 200 + 2);
         <table style={{ border: "1px solid black", borderCollapse: "collapse" }}>
             <tbody >
                 <tr>
+                    <td style={{ border: "1px solid black" }}>Тип</td>
                     <td style={{ border: "1px solid black" }}>5мл</td>
                     <td style={{ border: "1px solid black" }}>10мл</td>
                     <td style={{ border: "1px solid black" }}>20мл</td>
@@ -51,6 +50,7 @@ let ml200 = Math.ceil(ml1 * 200 + 2);
                     <td style={{ border: "1px solid black" }}>---</td>
                 </tr>
                 <tr>
+                    <td style={{ border: "1px solid black" }}>Н</td>
                     <td style={{ border: "1px solid black" }}>{ml5 || 0}</td>
                     <td style={{ border: "1px solid black" }}>{ml10 || 0}</td>
                     <td style={{ border: "1px solid black" }}>{ml20 || 0}</td>
@@ -60,6 +60,21 @@ let ml200 = Math.ceil(ml1 * 200 + 2);
                     <td style={{ border: "1px solid black" }}>{ml100 || 0}</td>
                     <td style={{ border: "1px solid black" }}>{ml150 || 0}</td>
                     <td style={{ border: "1px solid black" }}>{ml200 || 0}</td>
+                    <td style={{ border: "1px solid black" }}>--</td>
+                    <td style={{ border: "1px solid black" }}>--</td>
+                    <td style={{ border: "1px solid black" }}>--</td>
+                </tr>
+                <tr>
+                    <td style={{ border: "1px solid black" }}>К</td>
+                    <td style={{ border: "1px solid black" }}>{ Math.ceil(ml5 + ml5*percentsL) || 0}</td>
+                    <td style={{ border: "1px solid black" }}>{ Math.ceil(ml10 + ml10*percentsL) || 0}</td>
+                    <td style={{ border: "1px solid black" }}>{ Math.ceil(ml20 + ml20*percentsL) || 0}</td>
+                    <td style={{ border: "1px solid black" }}>{ Math.ceil(ml30 + ml30*percentsL) || 0}</td>
+                    <td style={{ border: "1px solid black" }}>{ Math.ceil(ml40 + ml40*percentsL) || 0}</td>
+                    <td style={{ border: "1px solid black" }}>{ Math.ceil(ml50 + ml50*percentsS) || 0}</td>
+                    <td style={{ border: "1px solid black" }}>{ Math.ceil(ml100 + ml100*percentsS) || 0}</td>
+                    <td style={{ border: "1px solid black" }}>{ Math.ceil(ml150 + ml150*percentsS) || 0}</td>
+                    <td style={{ border: "1px solid black" }}>{ Math.ceil(ml200 + ml200*percentsS) || 0}</td>
                     <td style={{ border: "1px solid black" }}>--</td>
                     <td style={{ border: "1px solid black" }}>--</td>
                     <td style={{ border: "1px solid black" }}>--</td>

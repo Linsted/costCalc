@@ -1,4 +1,4 @@
-export function Form({handleSubmit}) {
+export function Form({handleSubmit,handleClean}) {
 
 
     
@@ -14,6 +14,8 @@ export function Form({handleSubmit}) {
                 <input name="price" type="text" />
             </label>
             <br />
+            
+            <button type="button" onClick ={handleClean}> Очистити</button>
             <button type="submit"> Порахувати</button>
         </form>
     </>);
